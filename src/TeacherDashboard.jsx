@@ -10,26 +10,27 @@ import { db } from "./firebase";
 
 // canonical order of intelligence keys (your stored keys are in French)
 const INTELLIGENCE_KEYS = [
-  "Linguistique",
-  "LogicoMath",
-  "Spatiale",
-  "Kinesthesique",
-  "Musicale",
-  "Interpersonnelle",
-  "Intrapersonnelle",
-  "Naturaliste"
+  "Linguistic",
+  "Logical-Mathematical",
+  "Spatial",
+  "Kinesthetic",
+  "Musical",
+  "Interpersonal",
+  "Intrapersonal",
+  "Naturalistic"
 ];
 
 // map keys to English labels shown in the dashboard
+// (can be the same as the DB keys if you don’t need pretty labels)
 const LABELS = {
-  Linguistique: "Linguistic",
-  LogicoMath: "Logical/Math",
-  Spatiale: "Spatial",
-  Kinesthesique: "Kinesthetic",
-  Musicale: "Musical",
-  Interpersonnelle: "Interpersonal",
-  Intrapersonnelle: "Intrapersonal",
-  Naturaliste: "Naturalist"
+  "Linguistic": "Linguistic",
+  "Logical-Mathematical": "Logical/Math",
+  "Spatial": "Spatial",
+  "Kinesthetic": "Kinesthetic",
+  "Musical": "Musical",
+  "Interpersonal": "Interpersonal",
+  "Intrapersonal": "Intrapersonal",
+  "Naturalistic": "Naturalistic"
 };
 
 // maximum possible score per intelligence (3 questions * 3pts = 9)
